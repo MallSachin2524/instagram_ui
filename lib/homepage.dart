@@ -31,6 +31,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
+        padding: EdgeInsets.all(8),
         scrollDirection: Axis.horizontal,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -47,10 +48,6 @@ class HomePage extends StatelessWidget {
                       backgroundImage: AssetImage('assets/images/saloni.jpeg'),
                       // backgroundColor: Colors.green,
                       radius: 40,
-                    ),
-                    Text(
-                      "Saloni",
-                      style: TextStyle(fontSize: 10),
                     ),
                   ],
                 ),
@@ -225,6 +222,9 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
+            Row(
+              children: [Text("Sachin"), Text("Mall")],
+            )
           ],
         ),
       ),
