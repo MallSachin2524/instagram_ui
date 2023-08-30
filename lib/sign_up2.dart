@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:instagram_ui/homepage.dart';
+
+import 'loginpage.dart';
 
 class password extends StatelessWidget {
   const password({super.key});
@@ -69,7 +73,7 @@ class password extends StatelessWidget {
                 ),
               ),
               onTap: () {
-                print("Sachin");
+                Get.to(() => HomePage());
               },
             ),
           ],
@@ -86,7 +90,7 @@ class password extends StatelessWidget {
           ),
         ),
         onTap: () {
-          print("Hello");
+          Get.to(() => Loginpage());
         },
       ),
     );

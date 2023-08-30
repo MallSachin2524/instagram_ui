@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:instagram_ui/homepage.dart';
+import 'package:instagram_ui/sign_up.dart';
+
+import 'forgotpassword.dart';
 
 class Loginpage extends StatelessWidget {
   const Loginpage({super.key});
@@ -80,16 +83,18 @@ class Loginpage extends StatelessWidget {
                 ),
               ),
               onTap: () {
-                print("Hello");
                 Get.offAll(() => HomePage());
               },
             ),
             const SizedBox(height: 20),
-            const InkWell(
+            InkWell(
               child: Text(
                 "Forgotten Password?",
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
               ),
+              onTap: () {
+                Get.to(() => forgotpassword());
+              },
             ),
             const SizedBox(
               height: 60,
@@ -117,6 +122,9 @@ class Loginpage extends StatelessWidget {
                       ),
                     ),
                   ),
+                  onTap: () {
+                    Get.to(() => signup());
+                  },
                 ),
               ],
             ),

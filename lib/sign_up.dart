@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:instagram_ui/sign_up2.dart';
+
+import 'homepage.dart';
+import 'loginpage.dart';
 
 class signup extends StatelessWidget {
   const signup({super.key});
@@ -64,7 +68,7 @@ class signup extends StatelessWidget {
                 ),
               ),
               onTap: () {
-                print("Sachin");
+                Get.to(() => password());
               },
             ),
           ],
@@ -80,6 +84,9 @@ class signup extends StatelessWidget {
                 fontSize: 14, color: Colors.blue, fontWeight: FontWeight.bold),
           ),
         ),
+        onTap: () {
+          Get.to(() => HomePage());
+        },
       ),
     );
   }

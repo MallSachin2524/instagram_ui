@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'homepage.dart';
+
 class forgotpassword extends StatelessWidget {
   const forgotpassword({super.key});
 
@@ -86,7 +88,7 @@ class forgotpassword extends StatelessWidget {
                 ),
               ),
               onTap: () {
-                print("Sachin");
+                Get.to(() => HomePage());
               },
             ),
             SizedBox(
