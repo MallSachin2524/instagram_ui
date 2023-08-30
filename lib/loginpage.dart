@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:instagram_ui/homepage.dart';
 
 class Loginpage extends StatelessWidget {
   const Loginpage({super.key});
@@ -80,6 +81,7 @@ class Loginpage extends StatelessWidget {
               ),
               onTap: () {
                 print("Hello");
+                Get.offAll(() => HomePage());
               },
             ),
             const SizedBox(height: 20),

@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:instagram_ui/forgotpassword.dart';
 // import 'package:instagram_ui/homepage.dart';
-// import 'package:instagram_ui/sign_up.dart';
-import 'package:instagram_ui/sign_up2.dart';
+import 'package:instagram_ui/loginpage.dart';
 
-// import 'homepage.dart';
+// import 'feeds.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: forgotpassword(),
+      home: Loginpage(),
     );
   }
 }
